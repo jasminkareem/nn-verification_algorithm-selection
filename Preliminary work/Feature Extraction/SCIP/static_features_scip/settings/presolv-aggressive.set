@@ -1,0 +1,54 @@
+# SCIP version 8.0.3
+
+# fraction of integer variables that were fixed in the root node triggering a restart with preprocessing after root node evaluation
+# [type: real, advanced: TRUE, range: [0,1], default: 0.025]
+presolving/restartfac = 0.0125
+
+# minimal fraction of integer variables removed after restart to allow for an additional restart
+# [type: real, advanced: TRUE, range: [0,1], default: 0.1]
+presolving/restartminred = 0.06
+
+# should implications/cliques be used in presolving
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/logicor/implications = FALSE
+
+#  should we try to lift variables into other clique constraints, fix variables, aggregate them, and also shrink the amount of variables in clique constraints
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: FALSE]
+constraints/setppc/cliquelifting = TRUE
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/boundshift/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/dualagg/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/dualinfer/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/qpkktref/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/redvub/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/tworowbnd/maxrounds = -1
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: 0]
+presolving/stuffing/maxrounds = -1
+
+# maximal number of successive probings without fixings, until probing is aborted (0: don't abort)
+# [type: int, advanced: TRUE, range: [0,2147483647], default: 1000]
+propagating/probing/maxuseless = 1500
+
+# maximal number of successive probings without fixings, bound changes, and implications, until probing is aborted (0: don't abort)
+# [type: int, advanced: TRUE, range: [0,2147483647], default: 50]
+propagating/probing/maxtotaluseless = 75
+

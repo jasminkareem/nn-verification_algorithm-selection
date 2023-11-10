@@ -1,0 +1,45 @@
+scenario_id: sanitycheck
+performance_measures:
+    - PAR10
+maximize:
+    - false
+performance_type: 
+    - runtime
+algorithm_cutoff_time: 9600
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+algorithm_features_cutoff_time: '?'
+algorithm_features_cutoff_memory: '?'
+number_of_feature_steps: 1
+feature_steps:
+    trivialFeatures: 
+        provides:
+            -  SolveTime_default
+            -  SolveTime_conf1
+            -  SolveTime_conf2
+            -  SolveTime_conf3
+           
+default_steps: 
+    - trivialFeatures
+
+features_deterministic:
+    -  SolveTime_default
+    -  SolveTime_conf1
+    -  SolveTime_conf2
+    -  SolveTime_conf3
+
+features_stochastic: null
+metainfo_algorithms:
+    ConfigDefault:
+        configuration: ''
+        deterministic: true
+    Config1:
+        configuration: ''
+        deterministic: true
+    Config2:
+        configuration: ''
+        deterministic: true
+    Config3:
+        configuration: ''
+        deterministic: true

@@ -1,0 +1,66 @@
+# SCIP version 8.0.3
+
+# maximal number of restarts (-1: unlimited)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+presolving/maxrestarts = 0
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/linear/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/and/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/cumulative/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/knapsack/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/logicor/presolpairwise = FALSE
+
+# should implications/cliques be used in presolving
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/logicor/implications = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/setppc/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/varbound/presolpairwise = FALSE
+
+# should pairwise constraint comparison be performed in presolving?
+# [type: bool, advanced: TRUE, range: {TRUE,FALSE}, default: TRUE]
+constraints/xor/presolpairwise = FALSE
+
+# maximal number of presolving rounds the constraint handler participates in (-1: no limit)
+# [type: int, advanced: TRUE, range: [-1,2147483647], default: -1]
+constraints/components/maxprerounds = 0
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+presolving/domcol/maxrounds = 0
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+presolving/gateextraction/maxrounds = 0
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+presolving/sparsify/maxrounds = 0
+
+# maximal number of presolving rounds the presolver participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+presolving/dualsparsify/maxrounds = 0
+
+# maximal number of presolving rounds the propagator participates in (-1: no limit)
+# [type: int, advanced: FALSE, range: [-1,2147483647], default: -1]
+propagating/probing/maxprerounds = 0
+

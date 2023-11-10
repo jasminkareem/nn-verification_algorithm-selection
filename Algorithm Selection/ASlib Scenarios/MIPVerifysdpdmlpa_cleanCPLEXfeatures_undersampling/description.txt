@@ -1,0 +1,204 @@
+scenario_id: MIPVerifySDP_cleanARPsamplefeatureset
+performance_measures:
+    - PAR10
+maximize:
+    - false
+performance_type: 
+    - runtime
+algorithm_cutoff_time: 9600
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+algorithm_features_cutoff_time: '?'
+algorithm_features_cutoff_memory: '?'
+number_of_feature_steps: 6
+feature_steps:
+    trivialFeatures: 
+        provides: 
+            - n_vars
+            - n_constr
+            - n_nzcnt
+            - num_i_variables
+            - num_c_variables
+            - ratio_i_variables
+            - ratio_c_variables
+            - rhs_c_0_avg
+            - rhs_c_0_varcoef
+            - rhs_c_1_avg
+            - rhs_c_1_varcoef
+            - rhs_c_2_avg
+            - rhs_c_2_varcoef
+    LPbasedFeatures: 
+        provides:
+            - lp_avg
+            - lp_l2_avg
+            - lp_linf
+    NonContinuousFeatures:
+        provides:
+            - vcg_constr_deg0_avg
+            - vcg_constr_deg0_varcoef
+            - vcg_constr_weight0_avg
+            - vcg_constr_weight0_varcoef
+            - vcg_var_weight0_avg
+            - vcg_var_weight0_varcoef
+            - A_ij_normalized0_avg
+            - A_ij_normalized0_varcoef
+            - a_normalized_varcoefs0_avg
+            - a_normalized_varcoefs0_varcoef
+    ContinuousFeatures:
+        provides:
+            - vcg_constr_deg1_avg
+            - vcg_constr_deg1_varcoef
+            - vcg_var_deg1_avg
+            - vcg_var_deg1_varcoef
+            - vcg_var_deg1_q90mq10
+            - vcg_constr_weight1_avg
+            - vcg_constr_weight1_varcoef
+            - vcg_var_weight1_avg
+            - vcg_var_weight1_varcoef
+            - A_ij_normalized1_avg
+            - A_ij_normalized1_varcoef
+            - a_normalized_varcoefs1_avg
+            - a_normalized_varcoefs1_varcoef
+            - obj_coefs1_avg
+            - obj_coefs1_std
+            - obj_coef_per_constr1_avg
+            - obj_coef_per_constr1_std
+            - obj_coef_per_sqr_constr1_avg
+            - obj_coef_per_sqr_constr1_std
+    allVariablesFeatures: 
+        provides: 
+            - vcg_constr_deg2_avg
+            - vcg_constr_deg2_varcoef
+            - vcg_var_deg2_avg
+            - vcg_var_deg2_varcoef
+            - vcg_var_deg2_q90mq10
+            - vcg_constr_weight2_avg
+            - vcg_constr_weight2_varcoef
+            - vcg_var_weight2_avg
+            - vcg_var_weight2_varcoef
+            - A_ij_normalized2_avg
+            - A_ij_normalized2_varcoef
+            - a_normalized_varcoefs2_avg
+            - a_normalized_varcoefs2_varcoef
+            - obj_coefs2_avg
+            - obj_coefs2_std
+            - obj_coef_per_constr2_avg
+            - obj_coef_per_constr2_std
+            - obj_coef_per_sqr_constr2_avg
+            - obj_coef_per_sqr_constr2_std
+    ProbingFeatures: 
+       provides:
+            - pre_t
+            - new_row
+            - new_col
+            - new_nonzero
+            - clique_table
+            - cliqueCuts
+            - impliedBoundCuts
+            - flowCuts
+            - mixedIntegerRoundingCuts
+            - gomoryFractionalCuts
+            - mipgap
+            - nodecnt
+default_steps: 
+    - trivialFeatures
+    - LPbasedFeatures
+    - NonContinuousFeatures
+    - ContinuousFeatures
+    - allVariablesFeatures
+    - ProbingFeatures
+features_deterministic:
+    - n_vars
+    - n_vars
+    - n_constr
+    - n_nzcnt
+    - lp_avg
+    - lp_l2_avg
+    - lp_linf
+    - num_i_variables
+    - num_c_variables
+    - ratio_i_variables
+    - ratio_c_variables
+    - rhs_c_0_avg
+    - rhs_c_0_varcoef
+    - rhs_c_1_avg
+    - rhs_c_1_varcoef
+    - rhs_c_2_avg
+    - rhs_c_2_varcoef
+    - vcg_constr_deg0_avg
+    - vcg_constr_deg0_varcoef
+    - vcg_constr_weight0_avg
+    - vcg_constr_weight0_varcoef
+    - vcg_var_weight0_avg
+    - vcg_var_weight0_varcoef
+    - A_ij_normalized0_avg
+    - A_ij_normalized0_varcoef
+    - a_normalized_varcoefs0_avg
+    - a_normalized_varcoefs0_varcoef
+    - vcg_constr_deg1_avg
+    - vcg_constr_deg1_varcoef
+    - vcg_var_deg1_avg
+    - vcg_var_deg1_varcoef
+    - vcg_var_deg1_q90mq10
+    - vcg_constr_weight1_avg
+    - vcg_constr_weight1_varcoef
+    - vcg_var_weight1_avg
+    - vcg_var_weight1_varcoef
+    - A_ij_normalized1_avg
+    - A_ij_normalized1_varcoef
+    - a_normalized_varcoefs1_avg
+    - a_normalized_varcoefs1_varcoef
+    - obj_coefs1_avg
+    - obj_coefs1_std
+    - obj_coef_per_constr1_avg
+    - obj_coef_per_constr1_std
+    - obj_coef_per_sqr_constr1_avg
+    - obj_coef_per_sqr_constr1_std
+    - vcg_constr_deg2_avg
+    - vcg_constr_deg2_varcoef
+    - vcg_var_deg2_avg
+    - vcg_var_deg2_varcoef
+    - vcg_var_deg2_q90mq10
+    - vcg_constr_weight2_avg
+    - vcg_constr_weight2_varcoef
+    - vcg_var_weight2_avg
+    - vcg_var_weight2_varcoef
+    - A_ij_normalized2_avg
+    - A_ij_normalized2_varcoef
+    - a_normalized_varcoefs2_avg
+    - a_normalized_varcoefs2_varcoef
+    - obj_coefs2_avg
+    - obj_coefs2_std
+    - obj_coef_per_constr2_avg
+    - obj_coef_per_constr2_std
+    - obj_coef_per_sqr_constr2_avg
+    - obj_coef_per_sqr_constr2_std
+    - mipgap
+    - nodecnt
+    - pre_t
+    - new_row
+    - new_col
+    - new_nonzero
+    - clique_table
+    - cliqueCuts
+    - impliedBoundCuts
+    - flowCuts
+    - mixedIntegerRoundingCuts
+    - gomoryFractionalCuts
+
+    
+features_stochastic: null
+metainfo_algorithms:
+    ConfigDefault:
+        configuration: ''
+        deterministic: true
+    Config1:
+        configuration: ''
+        deterministic: true
+    Config2:
+        configuration: ''
+        deterministic: true
+    Config3:
+        configuration: ''
+        deterministic: true
