@@ -9,7 +9,7 @@ If you would like to use some of this work in your research, please do cite this
 
 
 ```
-@masterthesis{JKareem2023_perinstanceAS_NNV,
+@masterthesis{Kareem2023,
     author = {Jasmin Kareem},
     title = {Per-instance Algorithm Selection for MIP-based Neural Network Verification},
     school = {Leiden University},
