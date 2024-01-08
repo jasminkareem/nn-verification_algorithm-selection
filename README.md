@@ -1,5 +1,5 @@
 # nn-verification_algorithm-selection
-This repository contains the work done in my MSc Thesis at Leiden University, which was on per-instance algorithm selection to make neural network verification more efficient. If you want to read the thesis covering the work in this repository, you can do so [here]{https://theses.liacs.nl/pdf/2023-2024-KareemJ.pdf}.
+This repository contains the work done in my MSc Thesis at Leiden University, which was on per-instance algorithm selection to make neural network verification more efficient. If you want to read the thesis covering the work in this repository, you can do so here: https://theses.liacs.nl/pdf/2023-2024-KareemJ.pdf 
 
 
 
